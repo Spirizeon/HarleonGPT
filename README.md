@@ -45,7 +45,7 @@ python3 main.py
 ### Docker installation (needs docker installed)
 The image can be built from the Dockerfile.
 
-Do add your `openai.api_key` and `TOKEN` in `main.py` beforehand.
+Do add your `openai.api_key` and `TOKEN` in `.env` beforehand.
 ```bash
 docker build . -t harleon-bot
 docker run -it harleon
