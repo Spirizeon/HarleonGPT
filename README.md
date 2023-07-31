@@ -38,7 +38,7 @@ Go to the project directory
 cd HarleonGPT3
 pip install -r requirements.txt
 ```
-Add your `openai.api_key` and `TOKEN` in `main.py` then run
+Add your `openai.api_key` and `TOKEN` in `.env` then run
 
 ```bash
 python3 main.py 
