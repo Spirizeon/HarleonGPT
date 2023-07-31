@@ -2,9 +2,12 @@ import discord
 from discord.ext import commands
 import openai
 import DiscordUtils
-# # please uncomment the following 2 lines and do as the README suggests
-# openai.api_key = "<add your token here>"
-# TOKEN= "<add your token here>"
+
+import os
+from dotenv import load_dotenv
+load_dotenv()
+openai.api_key = os.getenv('openai')
+
 completion = openai.Completion()
 
 def Reply(question):
@@ -32,4 +35,4 @@ async def ping(interaction: discord.Interaction):
 async def l(ctx, *, question):
    await ctx.send(Reply(question))
         
-client.run(TOKEN)
+client.run(os.getenv('TOKEN'))
