@@ -29,13 +29,12 @@ An OpenAi GPT-3-powered discord bot. made using discord.py
 ### Manual installation
 
 ```bash
-git clone https://github.com/SiliconPaste/discordbots
+git clone https://github.com/spirizeon/harleongpt
 ```
 
 Go to the project directory
 
 ```bash
-cd HarleonGPT3
 pip install -r requirements.txt
 ```
 Add your `openai.api_key` and `TOKEN` in `.env` then run
