@@ -40,7 +40,7 @@ docker run -it harleon <openai-key> <token>
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `token` | `string` | **Discord Bot token** |
-| `openai-key` | `string` | **GPT-3 API key**.  |
+| `token` | `string` | **[Discord Bot token](https://discord.com/developers/docs/)** |
+| `openai-key` | `string` | **[GPT-3 API key](https://platform.openai.com/account/api-keys)**.  |
 
 
