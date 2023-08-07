@@ -1,7 +1,7 @@
 
 # Harleon-GPT
 
-An OpenAi GPT-3-powered discord bot. made using discord.py
+An OpenAi GPT-3-powered discord bot. made using discord.py, docker and github actions.
 
 ## Authors
 
