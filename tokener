@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "openai='${1}'" > .env 
+echo "TOKEN='${2}'" >> .env
+python3 main.py
