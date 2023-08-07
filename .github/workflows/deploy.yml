@@ -1,0 +1,30 @@
+
+name: Harleon GPT discord bot
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Login to GHCR
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GHCR_LOGIN }}
+ 
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+     
+      - name: Build
+        uses: docker/build-push-action@v4
+        with:
+          file: ./Dockerfile
+          push: true
+          tags: ghcr.io/spirizeon/harleongpt/harleongpt:latest 
