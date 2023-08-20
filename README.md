@@ -35,6 +35,7 @@ python3 main.py
 The image must be pulled from GHCR and run (needs Docker installed and set to `$PATH`) 
 ```bash
 docker pull ghcr.io/spirizeon/harleongpt/harleongpt:latest
+docker tag ghcr.io/spirizeon/harleongpt/harleongpt:latest harleon
 docker run -it harleon <openai-key> <token> 
 ```
 
